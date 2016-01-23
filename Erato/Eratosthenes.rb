@@ -59,7 +59,8 @@ def erato4(n)
     end
 
     numbers.compact!
-    return numbers
+    return numbers.count
 end
 
-puts Benchmark.measure{ erato4(10000) }
+#puts Benchmark.measure{ erato4(10000) }
+puts erato4(5)
